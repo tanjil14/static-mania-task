@@ -1,6 +1,6 @@
 const ArticleCard = ({ img, title }) => {
   return (
-    <div className="card w-full sm:w-1/2 md:w-1/3 min-h-[280px]">
+    <div className="card w-full  md:w-1/3 min-h-[280px]">
       <div className="card-img">
         <img src={img} alt="" className="w-full relative" />
       </div>

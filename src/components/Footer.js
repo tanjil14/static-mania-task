@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import cloud from "../img/Soundcloud.png";
 import apple from "../img/Apple Podcast.png";
 import google from "../img/Google Podcast.png";
 import logo from "../img/LogoWhite.svg";
+import cloud from "../img/Soundcloud.png";
 import spotify from "../img/Spotify.png";
 const Footer = () => {
   return (
     <footer>
       {/* Footer Top  */}
-      <div className=" px-10 md:px-20 md:py-10 py-5 bg-Black flex flex-col md:flex-row md:justify-between">
+      <div className=" px-10 md:px-20 md:pb-10 pb-5 pt-64 md:pt-36 bg-Black flex flex-col md:flex-row md:justify-between">
         <div className="cursor-pointer mb-6">
           <img src={logo} alt="logo" />
         </div>
@@ -48,10 +48,9 @@ const Footer = () => {
             </li>
             <li className="mt-4  cursor-pointer">
               <img src={google} className="w-3/4" alt="google" />
-              
             </li>
             <li className="mt-4  cursor-pointer">
-              <img src={cloud} className="w-3/4" alt="cloud" /> 
+              <img src={cloud} className="w-3/4" alt="cloud" />
             </li>
             <li className="mt-4  cursor-pointer">
               <img src={spotify} className="w-3/5" alt="spotify" />

@@ -2,6 +2,7 @@ import ArticleCard from "../components/ArticleCard";
 import CardItem from "../components/CardItem";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Sponsor from "../components/Sponsor";
 import bitcoin from "../img/articles/bitcoins.png";
 import gadgets from "../img/articles/gadgets.png";
 import article_mask from "../img/article_mask.png";
@@ -113,7 +114,7 @@ const Home = () => {
               </div>
             </div>
             {/* all Episodes */}
-            <div className="my-10 flex flex-col sm:flex-row gap-4 md:gap-1">
+            <div className="my-10 flex flex-col items-center md:flex-row gap-4 md:gap-1">
               {/* card  */}
               {episodes.map((episode, i) => (
                 <CardItem img={episode.img} title={episode.title} key={i} />
@@ -124,8 +125,8 @@ const Home = () => {
 
         {/* Article section  */}
         <section>
-          <div className="mt-8 mb-12 flex flex-col md:flex-row gap-5">
-            <div className="w-full sm:w-1/2 md:w-1/3 bg-[#F4F2FF]">
+          <div className="mt-8 flex flex-col items-center md:flex-row gap-5">
+            <div className="w-full md:w-1/3 bg-[#F4F2FF] h-full">
               <div className="p-5">
                 <h2 className="font-bold text-3xl mb-3 text-Black">
                   Read our <br /> articles & news
@@ -135,7 +136,7 @@ const Home = () => {
                 </span>
               </div>
               <div className="mt-10">
-                <img src={article_mask} className="h-full" alt="" />
+                <img src={article_mask} className=" w-full" alt="" />
               </div>
             </div>
             {articles.map((article, index) => (
@@ -147,6 +148,7 @@ const Home = () => {
             ))}
           </div>
         </section>
+        <Sponsor/>
       </main>
       <Footer />
     </>
