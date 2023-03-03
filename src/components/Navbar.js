@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../img/Logo.svg";
 const Navbar = () => {
   return (
-    <nav className="px-10 md:px-20 md:py-10 py-5">
+    <nav className="px-10 md:px-20 md:py-6 py-2">
       <div className="flex justify-between">
         <div className="logo">
           <Link to="/">
@@ -10,7 +10,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="menu">
-          <Link to="/about" className="text-[#14142B] font-normal text-base">About</Link>
+          <Link to="/about" className="text-Black font-normal text-base">About</Link>
         </div>
       </div>
     </nav>

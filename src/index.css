@@ -17,5 +17,5 @@ body {
 @tailwind utilities;
 
 .footer-menu{
-  @apply font-normal text-base text-white hover:underline mt-2;
+  @apply font-normal text-base text-white hover:underline mt-4;
 }
