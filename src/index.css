@@ -15,3 +15,7 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-menu{
+  @apply font-normal text-base text-white hover:underline mt-2;
+}
