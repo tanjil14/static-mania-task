@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 function App() {
   return (
-    <div className="App">
-      <h1 className="bg-red-500">Welcome to static mania</h1>
+    <div className="">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<Home />} />
+      </Routes>
     </div>
   );
 }
