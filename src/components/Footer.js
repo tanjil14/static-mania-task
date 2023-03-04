@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer>
       {/* Footer Top  */}
-      <div className=" px-10 md:px-20 md:pb-10 pb-5 pt-64 md:pt-36 bg-Black flex flex-col md:flex-row md:justify-between">
+      <div className=" px-10 md:px-20 md:pb-10 pb-5 pt-64 md:pt-36 bg-Black grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-4 gap-5 place-items-stretch">
         <div className="cursor-pointer mb-6">
           <img src={logo} alt="logo" />
         </div>
-        <div className="logo">
+        <div className=" ">
           <h5 className="text-white font-bold text-xl">Pages</h5>
           <ul className="my-6">
             <li className="footer-menu">
@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="logo">
+        <div className="">
           <h5 className="text-white font-bold text-xl">Reach Us</h5>
           <ul className="my-6">
             <li className="footer-menu">

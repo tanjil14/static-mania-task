@@ -752,6 +752,7 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
+      'xsm':'540px',
     },
     scrollMargin: ({ theme }) => ({
       ...theme('spacing'),

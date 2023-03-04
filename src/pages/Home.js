@@ -73,7 +73,7 @@ const Home = () => {
         </section>
         {/* podcasts section  */}
         <section>
-          <div className="flex flex-col sm:flex-row items-center sm:justify-between mt-8 mb-12 gap-6 sm:gap-3">
+          <div className="flex flex-col xsm:flex-row items-center  xsm:justify-center sm:justify-between mt-8 mb-12 gap-6 sm:gap-3 flex-wrap">
             <div>
               <h3 className="text-Black font-semibold text-xl">
                 Podcast Available On
@@ -100,7 +100,7 @@ const Home = () => {
             <h3 className="text-Black text-[32px] font-bold mb-4">
               Recent Episodes
             </h3>
-            <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-10">
+            <div className="flex flex-col  md:flex-row md:justify-between md:items-end gap-10">
               <div className="basis-1/2">
                 <p className="font-normal text-base text-Black leading-[150%]">
                   Apparently we had reached a great height in the atmosphere,
@@ -114,7 +114,7 @@ const Home = () => {
               </div>
             </div>
             {/* all Episodes */}
-            <div className="my-10 flex flex-col items-center md:flex-row gap-4 md:gap-1">
+            <div className="my-10 grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-1">
               {/* card  */}
               {episodes.map((episode, i) => (
                 <CardItem img={episode.img} title={episode.title} key={i} />
@@ -125,8 +125,8 @@ const Home = () => {
 
         {/* Article section  */}
         <section>
-          <div className="mt-8 flex flex-col items-center md:flex-row gap-5">
-            <div className="w-full md:w-1/3 bg-[#F4F2FF] h-full">
+          <div className="mt-8 grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="w-full bg-[#F4F2FF]">
               <div className="p-5">
                 <h2 className="font-bold text-3xl mb-3 text-Black">
                   Read our <br /> articles & news

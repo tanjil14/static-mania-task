@@ -2,7 +2,7 @@ import epIcon from "../img/episode/Episode Icon.png";
 import listenIcon from "../img/episode/listen.png";
 const CardItem = ({ img, title }) => {
   return (
-    <div className="card w-full sm:w-1/2 md:w-1/3 p-2">
+    <div className="card w-full p-2">
       <div className="card-img relative">
         <img src={img} alt="" className="w-full relative" />
         <img
